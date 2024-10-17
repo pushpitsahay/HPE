@@ -1,0 +1,257 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f9;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding-bottom: 7px;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.logo img {
+  max-height: 50px;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.user-info p {
+  margin: 0;
+  font-size: 13px;
+}
+.search-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1px;
+}
+.search-section input {
+  width: 500px;
+  padding: 10px 100px;
+  border-radius: 5px;
+  font-size: 13px;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+}
+.search-btn {
+  padding: 12px 12px;
+  background-color: #08b188;
+  color: white;
+  border: none;
+  font-size: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin: -5px;
+  padding-bottom: 10px;
+  gap: 15px;
+  position: relative;
+}
+nav ul li {
+  position: relative;
+}
+nav ul li a {
+  color: #333;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline-block;
+  width: max-content;
+}
+nav ul li p {
+  color: #333;
+  width: 40ch;
+  line-height: 24px;
+  font-size: 13px;
+}
+nav .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+  z-index: 10;
+  padding: 20px;
+}
+nav li:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.dropdown ul li {
+  padding: 5px 10px;
+  width: fit-content;
+}
+.listing {
+  margin-top: -5px;
+  border: 1px solid silver;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+/* Sidebar Styles */
+main {
+  height: 100%;
+}
+aside {
+  padding: 25px;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  min-height: 75vh;
+}
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+aside ul li a {
+  color: black;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  gap: 15px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  padding: 15px 15px;
+  border-radius: 3px;
+}
+aside ul li a:hover {
+  background-color: #08b188;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+aside ul li a i {
+  color: black;
+  transition: color 0.3s ease;
+}
+aside ul li a:hover i {
+  color: white;
+}
+
+/* Main Content */
+main {
+  display: flex;
+}
+.main-content {
+  padding: 35px;
+  flex-grow: 1;
+}
+.main-content h1 {
+  font-size: 25px;
+}
+.main-content p {
+  font-size: 15px;
+  color: #666;
+}
+
+/* Stats Section */
+.stats {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+.stat {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 222.5px;
+}
+.stat i {
+  font-size: 20px;
+  color: #08b188;
+  margin-right: 10px;
+  background-color: #eff2f9;
+  padding: 20px;
+  border-radius: 50%;
+}
+.stat .stat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+}
+.stat .stat-info p {
+  margin: 0;
+}
+.stat p:nth-child(1) {
+  font-size: 22px;
+  font-weight: bold;
+  color: #08b188;
+}
+.stat p:nth-child(2) {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* Chart Section */
+.chart-container {
+  width: 675px;
+  height: 310px;
+  float: left;
+  background-color: #fff;
+  margin-top: 25px;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Recent Activities */
+.recent-activities {
+  width: 400px;
+  float: right;
+  background-color: #fff;
+  margin-top: 25px;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.recent-activities ul {
+  list-style: none;
+  padding: 0;
+}
+.recent-activities ul li {
+  font-size: 15px;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  box-shadow: 0;
+}
+
+/* Footer */
+h5 {
+  text-align: center;
+}

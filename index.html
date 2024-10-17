@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/fca9669a80.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <div class="dashboard">
+      <header>
+        <div class="header-top">
+          <div class="logo">
+            <img src="Logo.png" alt="Logo" />
+          </div>
+          <div class="search-section">
+            <input type="text" placeholder="What type or location of business do you want to buy or sell?"/>
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i> SHOW RESULTS</button>
+          </div>
+          <div class="user-info">
+            <p><i class="fa-solid fa-message"></i> Can we help you?</p>
+            <p><i class="fa-solid fa-phone"></i> (888) 212-4747</p>
+          </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav>
+          <ul>
+            <li>
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i> SEARCH BUSINESSES</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#"><b>Hybrid Cloud Platform</b></a>
+                    <p>Bring the cloud experlence to all your IT.
+                      <br>
+                      Deploy and manage resources across your private and public clouds while retaining control of your data and flexibility over how you consume and manage your services.
+                    </p>
+                  </li>
+                  <li><a href="#"><b>HPE GreenLake</b></a>
+                    <p>Platform</p>
+                    <p>Services</p>
+                    <p>Marketplace</p>
+                    <p>Launch HPE GreenLake</p>
+                  </li>
+                  <li><a href="#"><b>All Products and Solutions</b></a>
+                    <p>Product types</p>
+                    <p>Solutions by topic</p>
+                    <p>Industries</p>
+                    <p>See all</p>
+                  </li>
+                </ul> 
+              </div>
+            </li>
+            <li><a href="#"><i class="fa-regular fa-address-card"></i> ADVERTISING</a></li>
+            <li><a href="#"><i class="fa-regular fa-file"></i> RESOURCES</a></li>
+            <li><a href="#"><i class="fa-regular fa-pen-to-square"></i> BLOG</a></li>
+            <li><a href="#"><i class="fa-regular fa-comment"></i> DISCUSSIONS</a></li>
+            <li><a href="#"><i class="fa-regular fa-calendar"></i> EVENTS</a>
+            </li>
+            <li><a href="#"><i class="fa-regular fa-user"></i> ABOUT US</a></li>
+            <br/>
+            <li><a href="#"><i class="fa-solid fa-user"></i> My BizBen</a></li>
+            <div class="listing">
+              <li><a href="#"><i class="fa-solid fa-circle-plus"></i> CREATE LISTING</a></li>
+            </div>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Dashboard -->
+      <main>
+        <aside>
+          <ul>
+            <li><a href="#"><i class="fa-solid fa-bars"></i> Dashboard</a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i> My Profile</a></li>
+            <li><a href="#"><i class="fa-solid fa-rectangle-list"></i> My Listings</a></li>
+            <li><a href="#"><i class="fa-solid fa-square-plus"></i> Add New Listing</a></li>
+            <li><a href="#"><i class="fa-solid fa-heart"></i> Favorites</a></li>
+            <li><a href="#"><i class="fa-solid fa-receipt"></i> My Invoices</a></li>
+            <li><a href="#"><i class="fa-solid fa-envelope"></i> Inbox</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i> Saved Searches</a></li>
+            <li><a href="#"><i class="fa-solid fa-circle-exclamation"></i> Email Alerts</a></li>
+            <li><a href="#"><i class="fa-solid fa-flag"></i> Email Reports</a></li>
+            <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+          </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <section class="main-content">
+          <h1>Hi, John!</h1>
+          <p>Ready to jump back in?</p>
+          <div class="stats">
+            <div class="stat">
+              <i class="fa-solid fa-home"></i>
+              <div class="stat-info">
+                <p>5</p>
+                <p>My Listings</p>
+              </div>
+            </div>
+            <div class="stat">
+              <i class="fa-solid fa-eye"></i>
+              <div class="stat-info">
+                <p>438</p>
+                <p>Total Views</p>
+              </div>
+            </div>
+            <div class="stat">
+              <i class="fa-solid fa-envelope"></i>
+              <div class="stat-info">
+                <p>12</p>
+                <p>Inbox</p>
+              </div>
+            </div>
+            <div class="stat">
+              <i class="fa-solid fa-heart"></i>
+              <div class="stat-info">
+                <p>34</p>
+                <p>My Favorites</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Total Views On My Listing -->
+          <div class="chart-container">
+            <p><b>Total Views On My Listing</b></p>
+            <canvas id="myChart" width="675" height="310"></canvas>
+          </div>
+
+          <!-- Recent Activities -->
+          <div class="recent-activities">
+            <p><b>Recent Activities</b></p>
+            <ul>
+              <li><i class="fa-solid fa-house-chimney"></i> Your listing <span style="color: #08b188"> Mexican Restaurant </span> has been approved!</li>
+              <li><i class="fa-solid fa-house-chimney"></i> Kathy Brown left a review on <span style="color: #08b188"> Hair Salon </span></li>
+              <li><i class="fa-solid fa-house-chimney"></i> Someone favorited your <span style="color: #08b188"> Computer Repair Shop </span> listing!</li>
+              <li><i class="fa-solid fa-heart"></i> Your listing <span style="color: #08b188"> Mexican Restaurant</span> has been approved!</li>
+              <li><i class="fa-solid fa-house-chimney"></i> Kathy Brown left a review on <span style="color: #08b188"> Hair Salon </span></li>
+              <li><i class="fa-solid fa-house-chimney"></i> Someone favorited your <span style="color: #08b188"> Computer Repair Shop </span> listing!</li>
+              <li><i class="fa-solid fa-house-chimney"></i> Your listing <span style="color: #08b188"> Mexican Restaurant </span> has been approved!</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <h5>Copyright © 2022 BizBen. All Rights Reserved.</h5>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
